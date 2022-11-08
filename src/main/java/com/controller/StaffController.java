@@ -25,11 +25,11 @@ public class StaffController {
 		return staff;
 	}
 	@GetMapping
-	Staff addstaff2(@RequestBody Staff staff) {
+	Staff getstaffdetails(@RequestBody Staff staff) {
 		return staff;
 	}
 	@DeleteMapping
-	Staff addstaff3(@RequestBody Staff staff) {
+	Staff deletestaff(@RequestBody Staff staff) {
 		return staff;
 	}
 	

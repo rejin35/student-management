@@ -1,5 +1,6 @@
 package com.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,25 +10,33 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.model.Student;
+import com.service.StudentService;
 
 @RestController
 @ComponentScan("com.*")
 public class StudentController {
 	
+	@Autowired
+	StudentService studentService;
+	
 	@PostMapping("/addstudent")
 	Student addstudent(@RequestBody Student student) {
+		studentService.addstudent(student);
 		return student;
 	}
 	@GetMapping("/addstudent")
 	Student addstudent1(@RequestBody Student student) {
+		studentService.getstudent(student);
 		return student;
 	}
 	@PutMapping("/addstudent")
 	Student addstudent2(@RequestBody Student student) {
+		studentService.putstudent(student);
 		return student;
 	}
 	@DeleteMapping("/addstudent")
 	Student addstudent3(@RequestBody Student student) {
+		studentService.deletestudent(student);
 		return student;
 	}
 	
