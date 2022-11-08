@@ -1,5 +1,5 @@
 package com.repository;
 
-public class ManageRepository {
+public interface ManageRepository {
 
 }
