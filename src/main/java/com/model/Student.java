@@ -1,7 +1,22 @@
 package com.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.Getter;
+import lombok.Setter;
+@Entity
+@Table(name = "student")
+@Getter
+@Setter
+
 public class Student {
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	int student_id;
 	String student_name;
 	String email;
@@ -66,6 +81,4 @@ public class Student {
 		this.city = city;
 	}
 	
-	
-
 }

@@ -1,10 +1,10 @@
 package com.controller;
 
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("com.*")
+@ComponentScan("com.*")
 public class Manageontroller {
 
 }
