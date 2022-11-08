@@ -6,4 +6,7 @@ import com.model.Staff;
 
 public interface StaffRepository extends JpaRepository<Staff, String> {
 
+
+
 }
+

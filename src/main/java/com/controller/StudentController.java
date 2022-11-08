@@ -22,22 +22,22 @@ public class StudentController {
 	@PostMapping("/addstudent")
 	Student addstudent(@RequestBody Student student) {
 		studentService.addstudent(student);
-		return student;
+		return studentService.addstudent(student);
 	}
 	@GetMapping("/addstudent")
 	Student addstudent1(@RequestBody Student student) {
 		studentService.getstudent(student);
-		return student;
+		return studentService.addstudent(student);
 	}
 	@PutMapping("/addstudent")
 	Student addstudent2(@RequestBody Student student) {
 		studentService.putstudent(student);
-		return student;
+		return studentService.putstudent(student);
 	}
 	@DeleteMapping("/addstudent")
 	Student addstudent3(@RequestBody Student student) {
 		studentService.deletestudent(student);
-		return student;
+		return studentService.deletestudent(student);
 	}
 	
 

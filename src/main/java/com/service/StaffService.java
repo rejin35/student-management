@@ -13,6 +13,19 @@ public class StaffService {
 	StaffRepository staffRepository;
 	
 	public Staff addStaff(Staff staff) {
+		staffRepository.save(staff);
+		return staff;
+	}
+	public Staff putStaff(Staff staff) {
+		staffRepository.save(staff);
+		return staff;
+	}
+	public Staff deleteStaff(Staff staff) {
+		staffRepository.delete(staff);
+		return staff;
+	}
+	public Staff getStaff(Staff staff) {
+		staffRepository.getClass();
 		return staff;
 	}
 	
