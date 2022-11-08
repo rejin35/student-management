@@ -21,22 +21,22 @@ public class StaffController {
 	@Autowired
 	StaffService staffService;
 	
-	@PutMapping
+	@PutMapping("/staff")
 	Staff addstaff(@RequestBody Staff staff) {
 		staffService.addStaff(staff);
 		return staff;
 	}
-	@PostMapping
+	@PostMapping("/addstaff")
 	Staff addstaff1(@RequestBody Staff staff) {
 		staffService.addStaff(staff);
 		return staff;
 	}
-	@GetMapping
+	@GetMapping("/getstaff")
 	Staff getstaffdetails(@RequestBody Staff staff) {
 		staffService.getStaff(staff);
 		return staff;
 	}
-	@DeleteMapping
+	@DeleteMapping("/deletestaff")
 	Staff deletestaff(@RequestBody Staff staff) {
 		staffService.deleteStaff(staff);
 		return staff;

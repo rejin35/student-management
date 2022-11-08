@@ -26,20 +26,20 @@ public class StudentController {
 		studentService.addstudent(student);
 		return studentService.addstudent(student);
 	}
-	@GetMapping("/addstudent")
-	Student addstudent1(@RequestBody Student student) {
+	@GetMapping("/getstudent")
+	Student getstudent(@RequestBody Student student) {
 		studentService.getstudent(student);
 		return studentService.addstudent(student);
 	}
 	@PutMapping("/addstudent")
-	Student addstudent2(@RequestBody Student student) {
+	Student putstudent(@RequestBody Student student) {
 		studentService.putstudent(student);
 		return studentService.putstudent(student);
 	}
-	@DeleteMapping("/addstudent")
-	Student addstudent3(@RequestBody Student student) {
+	@DeleteMapping("/deletestudent")
+	Student deletestudent(@RequestBody Student student) {
 		studentService.deletestudent(student);
-		return studentService.deletestudent(student);
+		return student;
 	}
 	
 

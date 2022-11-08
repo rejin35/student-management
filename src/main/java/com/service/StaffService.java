@@ -25,7 +25,6 @@ public class StaffService {
 		return staff;
 	}
 	public Staff getStaff(Staff staff) {
-		staffRepository.getClass();
 		return staff;
 	}
 	

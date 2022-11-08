@@ -24,12 +24,12 @@ public class StudentService {
 		
 	}
 	public Student getstudent(Student student) {
-		studentRepository.save(student);
+
 		return student;
 		
 	}
 	public Student deletestudent(Student student) {
-		studentRepository.save(student);
+		studentRepository.delete(student);
 		return student;
 		
 	}
