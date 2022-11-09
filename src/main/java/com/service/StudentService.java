@@ -1,5 +1,10 @@
 package com.service;
 
+
+
+import java.util.List;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,13 +23,8 @@ public class StudentService {
 		
 	}
 	
-	public Student putstudent(Student student) {
+	public Student updatestudent(Student student) {
 		studentRepository.save(student);
-		return student;
-		
-	}
-	public Student getstudent(Student student) {
-
 		return student;
 		
 	}
@@ -32,5 +32,9 @@ public class StudentService {
 		studentRepository.delete(student);
 		return student;
 		
+	}
+	public Optional<Student> getstudentbyid(Integer student_id){
+		Optional<Student>getid=studentRepository.findById(student_id);
+		return getid;
 	}
 }

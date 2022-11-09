@@ -13,7 +13,7 @@ public class Student {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	int student_id;
+	Integer student_id;
 	String student_name;
 	String email;
 	Long phone;
@@ -22,10 +22,10 @@ public class Student {
 	String blood_group;
 	String address;
 	String city;
-	public int getStudent_id() {
+	public Integer getStudent_id() {
 		return student_id;
 	}
-	public void setStudent_id(int student_id) {
+	public void setStudent_id(Integer student_id) {
 		this.student_id = student_id;
 	}
 	public String getStudent_name() {

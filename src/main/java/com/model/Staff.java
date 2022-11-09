@@ -10,17 +10,17 @@ import javax.persistence.Table;
 public class Staff {
 	
 	@Id
-	int staff_id;
+	Integer staff_id;
 	String staff_name;
 	String department;
 	String email;
 	String phone;
 	String address;
 	String city;
-	public int getStaff_id() {
+	public Integer getStaff_id() {
 		return staff_id;
 	}
-	public void setStaff_id(int staff_id) {
+	public void setStaff_id(Integer staff_id) {
 		this.staff_id = staff_id;
 	}
 	public String getStaff_name() {
